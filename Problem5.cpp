@@ -26,8 +26,8 @@ int lcm(int a, int b)
 int main()
 {
     long long num = 1;
-    int lower_limit = 1;
-    int upper_limit = 20;
+    const int lower_limit = 1;
+    const int upper_limit = 20;
 
     for(int i = lower_limit; i < upper_limit; i++)
     {

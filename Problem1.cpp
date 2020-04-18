@@ -12,9 +12,9 @@
 int main()
 {
     // Inputs
-    int maximum = 1000;
-    int first_multiple = 5;
-    int second_multiple = 3;
+    const int maximum = 1000;
+    const int first_multiple = 5;
+    const int second_multiple = 3;
 
     int output = 0;
 

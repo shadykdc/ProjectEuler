@@ -59,13 +59,13 @@ bool IsPalindrome(int num)
 
 int main()
 {
-    int lower_limit = 100;
-    int upper_limit = 999;
+    const int lower_limit = 100;
+    const int upper_limit = 999;
     int largest_palindrome = 0; // 999 * 999 = 998001 so int is fine
 
-    for (int factor1 = upper_limit; factor1 > 0; factor1--)
+    for (int factor1 = upper_limit; factor1 >= lower_limit; factor1--)
     {
-        for (int factor2 = factor1; factor2 > 0; factor2--)
+        for (int factor2 = factor1; factor2 >= lower_limit; factor2--)
         {
             int product = factor1 * factor2;
             if (IsPalindrome(product))
