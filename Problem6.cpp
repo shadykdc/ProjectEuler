@@ -20,23 +20,20 @@
 
 int main()
 {
-    long long output = 0;
+    // Inputs
     const int lower_limit = 1;
     const int upper_limit = 100;
 
-    for (int i = lower_limit; i <= upper_limit; i++)
-    {
-        output += i;
-    }
-
-    output = output^2;
+    // Outputs - int max is 2147483647
+    int sum = (upper_limit  + lower_limit) * (upper_limit / 2);
+    long sum_of_the_squares = 0;
 
     for (int i = lower_limit; i <= upper_limit; i++)
     {
-        output -= i;
+        sum_of_the_squares += i * i;
     }
 
-    std::printf("%I64d\n", output); // 25164150
+    std::printf("%d", (int)(sum * sum - sum_of_the_squares)); // 25164150
 
     return 0;
 }
