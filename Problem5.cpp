@@ -8,7 +8,7 @@
     numbers from 1 to 20?
 */
 
-#include <iostream>
+#include <iostream> // printf
 
 // Returns the greatest common denominator of a and b
 int gcd(int a, int b)

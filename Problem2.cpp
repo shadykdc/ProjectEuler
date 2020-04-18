@@ -10,7 +10,7 @@
     exceed four million, find the sum of the even-valued terms.
 */
 
-#include <iostream>
+#include <iostream> // printf
 
 int main()
 {

@@ -16,18 +16,27 @@
     natural numbers and the square of the sum.
 */
 
-#include <iostream>
+#include <iostream> // printf
 
 int main()
 {
-    long sum_of_squares = 1;
-    long square_of_sums = 1;
-    const long lower_limit = 1;
-    const long upper_limit = 100;
+    long long output = 0;
+    const int lower_limit = 1;
+    const int upper_limit = 100;
 
-    
+    for (int i = lower_limit; i <= upper_limit; i++)
+    {
+        output += i;
+    }
 
-    std::printf("%I64d\n", num); // 25164150
+    output = output^2;
+
+    for (int i = lower_limit; i <= upper_limit; i++)
+    {
+        output -= i;
+    }
+
+    std::printf("%I64d\n", output); // 25164150
 
     return 0;
 }
