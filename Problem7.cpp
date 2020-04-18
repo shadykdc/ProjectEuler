@@ -28,7 +28,7 @@ bool IsPrime(long long num)
 
 int main()
 {
-    int upper_limit = 10001;
+    const int upper_limit = 10001;
     int prime_count = 0;
     int current_number = 0;
 
